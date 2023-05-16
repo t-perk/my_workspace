@@ -1,0 +1,7 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+cc_binary(
+  name = "hello_world",
+  deps = ["@com_google_absl//absl/strings", "@cereal//:cereal-lib", "@libtorch//:libtorch-lib"],
+  srcs = ["hello_world.cc"],
+)

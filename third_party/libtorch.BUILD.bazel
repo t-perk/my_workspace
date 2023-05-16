@@ -1,0 +1,7 @@
+# contents of //third_party/libtorch.BUILD.bazel
+cc_library(
+    name = "libtorch-lib",
+    srcs = glob(["**/*.h", "**/*.hpp"]),
+    includes = ["libtorch/include"],
+    visibility = ["//visibility:public"],
+)

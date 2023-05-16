@@ -1,0 +1,7 @@
+# contents of //third_party/cereal.BUILD.bazel
+cc_library(
+    name = "cereal-lib",
+    srcs = glob(["**/*.hpp"]),
+    includes = ["cereal-1.3.0/include"],
+    visibility = ["//visibility:public"],
+)
